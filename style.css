@@ -1,0 +1,152 @@
+/* กำหนดค่าตัวแปรสีและฟอนต์หลัก */
+:root {
+    --bg-gradient: linear-gradient(135deg, #fdfbf7 0%, #f4ebe1 50%, #eadccb 100%);
+    --card-bg: #ffffff;
+    --warm-brown: #8c5830;
+    --warm-brown-dark: #5c381d;
+    --accent-hover: #b56536;
+    --text-dark: #4a403a;
+}
+
+/* พื้นหลังไล่สีโทนอบอุ่นและตั้งค่าการเลื่อนแบบ Smooth */
+body {
+    font-family: 'Prompt', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-dark);
+    min-height: 100vh;
+    padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar ให้เข้ากับธีม */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f4ebe1;
+}
+::-webkit-scrollbar-thumb {
+    background: #b56536;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8c5830;
+}
+
+/* Navbar โทนอบอุ่นพร้อมลูกเล่นโปร่งแสงเล็กน้อย */
+.warm-nav {
+    background: linear-gradient(135deg, rgba(140, 88, 48, 0.95) 0%, rgba(92, 56, 29, 0.95) 100%) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(92, 56, 29, 0.15);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link {
+    color: #f7f3ee !important;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+/* Container ขนาดกำลังดี */
+.my-container {
+    max-width: 950px;
+}
+
+/* ส่วนกล่องเนื้อหาหลัก (Card Section) พร้อมลูกเล่นเงาและขยับเมื่อ hover */
+.card-section {
+    background: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid rgba(220, 205, 190, 0.6);
+    box-shadow: 0 4px 15px rgba(140, 88, 48, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(140, 88, 48, 0.1) !important;
+}
+
+/* 1. รูป Display แบบวงกลม พร้อมลูกเล่นซูมเมื่อเอาเมาส์ชี้ */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(140, 88, 48, 0.15);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.06) rotate(2deg);
+    box-shadow: 0 15px 35px rgba(140, 88, 48, 0.25);
+}
+
+/* การ์ดย่อยภายใน (Sub-Card) พร้อมลูกเล่นเด้งขึ้น */
+.sub-card {
+    background-color: #faf7f2 !important;
+    border-radius: 12px !important;
+    border: 1px solid #f0e6dc !important;
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sub-card:hover {
+    transform: translateY(-6px);
+    background-color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(140, 88, 48, 0.08) !important;
+}
+
+/* วงกลมไอคอนด้านบนการ์ด */
+.icon-circle {
+    font-size: 1.8rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.sub-card:hover .icon-circle {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* สีตัวอักษรและลิงก์ธีมอบอุ่น */
+.text-dark-warm {
+    color: var(--warm-brown-dark);
+}
+
+.link-warm {
+    color: var(--accent-hover);
+    transition: color 0.2s ease;
+}
+
+.link-warm:hover {
+    color: var(--warm-brown);
+    text-decoration: underline !important;
+}
+
+/* Footer ธีมอบอุ่นกลมกลืน */
+.warm-footer {
+    background: var(--warm-brown-dark);
+    letter-spacing: 0.5px;
+}
+
+/* Responsive ปรับแต่งสำหรับมือถือ */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+}
