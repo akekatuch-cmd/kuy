@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - เอกทัศน์ คุ้นเคย</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Sarabun) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- เชื่อมโยงไฟล์ CSS แยก -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar แบบ Toggle Responsive และ Anchor Link -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#about">My Resume</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับตัวฉัน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">การศึกษา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">ทักษะ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Section: เกี่ยวกับตัวฉัน (About Me) -->
+        <section id="about" class="text-center">
+            <!-- 
+                วิธีใส่รูปตัวเอง: 
+                ให้นำรูปมาไว้ในโฟลเดอร์เดียวกัน แล้วเปลี่ยน 'my-profile.jpg' เป็นชื่อไฟล์รูปของคุณ 
+                เช่น <img src="my-photo.jpg" alt="รูปโปรไฟล์" class="profile-img mb-3">
+            -->
+            <img src="my-profile.jpg" alt="Profile Picture" class="profile-img mb-3">
+            
+            <!-- ชื่อ-นามสกุลแบบ h1 -->
+            <h1 class="mt-2 mb-1">เอกทัศน์ คุ้นเคย</h1>
+            
+            <!-- สาขาวิชาเป็นตัวเอียง (em) -->
+            <p class="fs-5 text-muted mb-2"><em>3 ET 4 วิศวกรรมศาสตร์และเทคโนโลยี</em></p>
+            
+            <!-- ชื่อคณะ -->
+            <h4 class="h5 text-secondary mb-2">คณะวิศวกรรมศาสตร์และเทคโนโลยี</h4>
+            
+            <!-- ชื่อสถาบันฯ พร้อมลิ้งค์ไปยังเว็บไซต์สถาบัน -->
+            <p class="mb-4">
+                <a href="http://pim.ac.th" target="_blank" class="text-primary-custom">สถาบันการจัดการปัญญาภิวัฒน์</a>
+            </p>
+
+            <hr class="w-25 mx-auto my-4">
+
+            <!-- ประวัติโดยย่อ และ Section เกี่ยวกับตัวฉัน -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="custom-card p-4 text-start">
+                        <h3 class="h5 fw-bold mb-3 section-title">เกี่ยวกับตัวฉัน (About Me)</h3>
+                        <p class="mb-2">สวัสดีครับ ผมชื่อนายเอกทัศน์ คุ้นเคย ชื่อเล่นชื่อดีดีครับ ตอนนี้ผมกำลังศึกษา อยู่ในระดับปริญญาตรี ครับผมมีความสนใจด้านการเขียนเว็บมากๆ ครับ</p>
+                        <p class="mb-0 text-muted">สวัสดีครับ ผมเป็นลูก คนโตที่สุด มีพี่น้องทั้งหมด 4 คนครับ ผมในช่วงอนุบาลถึงประถมศึกษที่โรงเรียนวัดดอนหวาย ก่อนจะศึกษาชั้นมัธยมศึกษา ที่โรงเรียนคลองใหม่ หลังจบการศึกสาชั้นมัธยมต้น ศึกษาต่อที่วิทยาลัยเทคโนโลยีปัญญาภิวัฒน์ จบการศึกษา แล้วปัจจุบันศึกษาปริญญาตรี ที่สถาบันการจัดการปัญญาภิวัฒน์ครับ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- เส้นแบ่งย่อหน้า -->
+        <hr class="my-5">
+
+        <!-- Section: การศึกษา (Education) -->
+        <section id="education">
+            <h2 class="text-center mb-5">การศึกษา (Education)</h2>
+            <!-- Responsive Grid: Desktop 4 คอลัมน์, Tablet 2 คอลัมน์, มือถือ 1 คอลัมน์ -->
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100 p-4">
+                        <span class="badge badge-custom mb-3">ประถมศึกษา</span>
+                        <h5 class="h6 fw-bold">โรงเรียนวัดดอนหวาย</h5>
+                        <p class="text-muted small mb-0">อนุบาลถึงประถมศึกษา</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100 p-4">
+                        <span class="badge badge-custom mb-3">มัธยมศึกษาตอนต้น</span>
+                        <h5 class="h6 fw-bold">โรงเรียนคลองใหม่</h5>
+                        <p class="text-muted small mb-0">สำเร็จการศึกษาชั้นมัธยมต้น</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100 p-4">
+                        <span class="badge badge-custom mb-3">ปวช. / อาชีวศึกษา</span>
+                        <h5 class="h6 fw-bold">วิทยาลัยเทคโนโลยีปัญญาภิวัฒน์</h5>
+                        <p class="text-muted small mb-0">สำเร็จการศึกษาระดับ ปวช.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="custom-card h-100 p-4">
+                        <span class="badge badge-custom mb-3">ปริญญาตรี</span>
+                        <h5 class="h6 fw-bold">สถาบันการจัดการปัญญาภิวัฒน์</h5>
+                        <p class="text-muted small mb-0">วิศวกรรมศาสตร์และเทคโนโลยี (3 ET 4)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- Section: Skills -->
+        <section id="skills">
+            <h2 class="text-center mb-4">ทักษะความสามารถ (Skills)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="custom-card p-4 text-center">
+                        <p class="text-muted fst-italic mb-4">"ผมเขียนโค้ดพอได้ครับนิดหน่อย HTML, CSS, Bootstrap พอใช้งานได้ครับ"</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge badge-custom">HTML</span>
+                            <span class="badge badge-custom">CSS</span>
+                            <span class="badge badge-custom">Bootstrap</span>
+                            <span class="badge badge-custom">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- Section: ติดต่อ (Contact) -->
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-4">ช่องทางติดต่อ (Contact)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="custom-card p-4">
+                        <!-- ข้อมูลการติดต่อใช้ Ordered List (ol) -->
+                        <ol class="mb-0 ps-3">
+                            <li class="mb-2"><strong>อีเมล์สถาบัน:</strong> student[at]pim.ac.th</li>
+                            <li class="mb-2"><strong>เบอร์โทรศัพท์:</strong> 0xx-xxx-xxxx</li>
+                            <li class="mb-2"><strong>ที่อยู่:</strong> หอพักใกล้มหาวิทยาลัย นนทบุรี</li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" class="text-primary-custom">github.com/username</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
